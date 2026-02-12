@@ -67,7 +67,11 @@
         new_terminal: new_terminal {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&macro_press>, <&kp LS(LC(GRAVE))>, <&macro_release>;
+            bindings =
+                <&macro_press>,
+                <&kp LS(LC(GRAVE))>,
+                <&macro_release>,
+                <&kp LS(LC(GRAVE))>;
 
             label = "NEW_TERMINAL";
         };
